@@ -1,0 +1,252 @@
+:root {
+    --fontColor: #222328;
+    --mainColor: #2700ba;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'S-Core Dream 4', sans-serif;
+    color: var(--fontColor);
+}
+
+a, a:after, a:before, a:hover {
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* 컨테이너 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    /* background: #eee; */
+}
+
+/* 헤더 */
+header {
+    z-index: 999;
+    height: 100px;
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+/* 지앤비 */
+#gnb {
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+#gnb .mainMenu {
+    display: flex;
+    text-align: center;
+}
+
+#gnb > .mainMenu > li{
+    width: 200px;
+    /* outline: 1px solid #555; */
+}
+
+#gnb > .mainMenu > li > a {
+    font-family: 'S-Core Dream 6', sans-serif;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 35px;
+}
+#gnb > .mainMenu > li > a:hover {
+    padding: 35px;
+    font-weight: 700;
+    color: var(--mainColor);
+    background-color: #2800ba30;
+}
+
+/* 이단계 메뉴 */
+
+#gnb .subMenu {
+    font-family: 'S-Core Dream 3', sans-serif;
+    font-size: 16px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#gnb .subMenu.on {
+    height: 210px;
+    opacity: 1;
+}
+
+#gnb .subMenu > li > a {
+    display: block;
+    color: #fff;
+    background-color: #2800ba80;
+    padding: 15px;
+}
+
+#gnb .subMenu > li > a:hover {
+    background-color: #fff;
+    color: var(--fontColor);
+}
+
+/* 슬라이더 */
+
+.slider {
+    width: 1200px;
+    height: 300px;
+    /* outline: 4px solid red; */
+    overflow: hidden;
+}
+
+.slider .sliders img {
+    display: block;
+}
+
+.sliders {
+    /* 세로로 움직이는 거라 높이값 / Y축으로 */
+    transform: translateY(calc(-300px * 0));
+    transition: 0.5s;
+}
+
+/* 콘텐츠 영역 1 */
+#main {
+    display: flex;
+    height: 200px;
+}
+      
+#main .col {
+    /* outline: 1px solid #666; */
+    width: 400px;
+    padding: 20px;
+}
+
+#main .banner {
+    padding: 0;
+}
+
+#main .banner img {
+    width: 400px;
+}
+
+
+/* 공지사항 */
+
+#notice ul li {
+    padding: 5px;
+}
+
+#gallery {
+    display: flex;
+}
+
+#gallery a {
+    display: block;
+    outline: 2px solid rebeccapurple;
+    padding: 0 10px;
+}
+
+#gallery a img {
+    width: 100%;
+}
+
+/* 탭버튼 */
+
+.tab_buttons a.noticeBtn,
+.tab_buttons a.galleryBtn {
+    outline: 1px solid orange;
+    display: block;
+    padding: 10px;
+}
+
+.tab_buttons {
+    display: flex;
+}
+
+#notice {
+    display: none;
+}
+
+#notice.on {
+    display: block;
+}
+
+#gallery {
+    display: none;
+}
+
+#gallery.on {
+    display: flex;
+}
+
+/* 푸터 */
+
+footer {
+    background: #eee;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer a img {
+    outline: 1px solid black;
+    width: 200px;
+}
+
+footer .sns {
+    outline: 1px solid black;
+    width: 200px;
+}
+
+/* 모달 */
+
+.modal {
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 3px solid var(--mainColor);
+    border-radius: 10px;
+    padding: 20px;
+    left: 60%;
+    top: 100px;
+    position: fixed;
+    z-index: 888;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+.modal .close {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    border: none;
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.modal p {
+    font-size: 18px;
+}
+
+.modal.off {
+    display: none;
+}

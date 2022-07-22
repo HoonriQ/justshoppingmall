@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just쇼핑몰</title>
+    <script src="./Script/jquery-1.12.3.js"></script>
+    <script src="./Script/app.js"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <header class="container">
+        <h1>
+            <a href="index.html">
+                <img src="./Images/logo_colored.png" alt="just 쇼핑몰">
+            </a>
+        </h1>
+        <nav id="gnb">
+            <ul class="mainMenu">
+                <li>
+                    <a href="#">탑</a>
+                    <ul class="subMenu">
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">셔츠</a></li>
+                        <li><a href="#">니트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">아우터</a>
+                    <ul class="subMenu">
+                        <li><a href="#">자켓</a></li>
+                        <li><a href="#">코트</a></li>
+                        <li><a href="#">가디건</a></li>
+                        <li><a href="#">머플러</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">팬츠</a>
+                    <ul class="subMenu">
+                        <li><a href="#">청바지</a></li>
+                        <li><a href="#">짧은바지</a></li>
+                        <li><a href="#">긴바지</a></li>
+                        <li><a href="#">레깅스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">악세사리</a>
+                    <ul class="subMenu">
+                        <li><a href="#">귀고리</a></li>
+                        <li><a href="#">목걸이</a></li>
+                        <li><a href="#">반지</a></li>
+                        <li><a href="#">팔찌</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="mainVisual" class="container">
+            <div class="slider">
+                <div class="sliders">
+                    <img src="./Images/main_01_edited.jpg" alt="악세사리 50% 할인">
+                    <img src="./Images/main_02_edited.jpg" alt="신규가입시 5천 포인트 증정">
+                    <img src="./Images/main_03_edited.jpg" alt="2022 여름 신상품 입고">
+                </div>
+            </div>
+        </section>
+        <section id="main" class="container">
+            <!-- 텝 메뉴 영역 -->
+            <div class="col">
+              <div class="tab_buttons">
+                <a href="#notice" class="noticeBtn">공지사항</a>
+                <a href="#gallery" class="galleryBtn">갤러리</a>
+              </div>
+              <div class="tab_contents on" id="notice">
+                <ul>
+                  <li><a href="#" class="open">공지사항 제목...</a></li>
+                  <li><a href="#">공지사항 제목...</a></li>
+                  <li><a href="#">공지사항 제목...</a></li>
+                  <li><a href="#">공지사항 제목...</a></li>
+                </ul>
+              </div>
+              <div class="tab_contents" id="gallery">
+                <a href="#"><img src="./Images/pexels-kaboompics-com-6400.jpg" alt="1"></a>
+                <a href="#"><img src="./Images/pexels-artem-beliaikin-1100790.jpg" alt="2"></a>
+                <a href="#"><img src="./Images/pexels-andrea-piacquadio-915051.jpg" alt="3"></a>
+              </div>
+            </div>
+            <!-- 배너c.3 -->
+            <div class="col banner">
+                <a href="#">
+                    <img src="./Images/bannerC_3.jpg" alt="드레스1+1 보러가기">
+                </a>
+            </div>
+            <!-- 바로가기 배너 c.4 -->
+            <div class="col banner">
+                <a href="#">
+                    <img src="./Images/bannerC_4.jpg" alt="모바일앱 설치시 무료배송 쿠폰을 드립니다.">
+                </a>
+            </div>
+          </section>
+    </main>
+    <footer class="container">
+        <a href="#">
+            <img src="./Images/logo_uncolored.png" alt="저스트 쇼핑몰">
+        </a>
+        <p class="copy">Copyright © 이동훈. All Rights Reserved.</p>
+        <p class="sns">SNS</p>
+
+    </footer>
+
+    <div class="modal">
+        <h1>타이틀</h1>
+        <hr>
+        <p>더미텍스트가 어쩌고 저쩌고 들어가겠죠?더미텍스트가 어쩌고 저쩌고 들어가겠죠?더미텍스트가 어쩌고 저쩌고 들어가겠죠?더미텍스트가 어쩌고 저쩌고 들어가겠죠?더미텍스트가 어쩌고 저쩌고 들어가겠죠?</p>
+        <button class="close">X</button>
+    </div>
+</body>
+</html>
